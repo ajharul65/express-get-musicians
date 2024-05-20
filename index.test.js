@@ -12,7 +12,16 @@ const seedMusician = require("./seedData");
 
 describe('./musicians endpoint', () => {
     // Write your tests here
-    
+    test("Testing musicians endpoint", async () => {
+        // Sends request to `/bakedGoods` endpoint
+        const response = await request(app).get("/musicians");
+    })
+
+    test("Testing musicians endpoint", async () => {
+        // Sends request to `/bakedGoods` endpoint
+        const response = await request(app).get("/musicians");
+        expect(response.statusCode).toBe(200);
+    })
     
 
 
